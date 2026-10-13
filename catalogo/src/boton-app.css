@@ -1,0 +1,41 @@
+:host {
+    display: inline-block;
+}
+
+button {
+    font: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.primario {
+    background: #0066cc;
+    color: white;
+}
+
+.secundario {
+    background: white;
+    color: #0066cc;
+    border-color: #0066cc;
+}
+
+.peligro {
+    background: #ff4757;
+    color: white;
+}
+
+button:disabled {
+    background: #e5e7eb;
+    color: #6b7280;
+    cursor: not-allowed;
+}

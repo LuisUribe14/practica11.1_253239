@@ -1,0 +1,44 @@
+:host {
+  display: inline-block;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #0066cc;
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+button:disabled {
+  background: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.valor {
+  min-width: 30px;
+
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}

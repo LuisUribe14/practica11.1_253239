@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Catálogo deportivo</title>
+
+  <link rel="stylesheet" href="/src/estilos.css" />
+</head>
+
+<body>
+
+  <header class="encabezado">
+
+    <div class="encabezado__marca">
+      <img src="/img/logo.svg" alt="Logo ITSON" height="40" />
+
+      <span>Catálogo deportivo</span>
+    </div>
+
+    <div class="encabezado__carrito">
+
+      <span>
+        Carrito:
+        <strong id="cuenta">0</strong>
+      </span>
+
+      <boton-app id="vaciar" variante="primario">
+        Vaciar
+      </boton-app>
+
+    </div>
+
+  </header>
+
+  <main class="contenido">
+
+    <section class="portada">
+
+      <h1>Catálogo de temporada</h1>
+
+      <p>
+        Doce productos creados utilizando Web Components
+        con TypeScript puro.
+      </p>
+
+    </section>
+
+    <section id="rejilla" class="rejilla">
+    </section>
+
+    <section class="carrito-detalle">
+
+      <h2>Productos en el carrito</h2>
+
+      <tabla-generica id="tabla-carrito"></tabla-generica>
+
+    </section>
+
+    <section class="prueba-contador">
+
+      <h2>Selector de cantidad</h2>
+
+      <contador-cantidad
+        id="contador-prueba"
+        valor="1"
+        minimo="1"
+        maximo="5">
+      </contador-cantidad>
+
+      <p>
+        Cantidad seleccionada:
+        <strong id="cantidad-seleccionada">1</strong>
+      </p>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+
+</body>
+
+</html>
